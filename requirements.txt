@@ -1,0 +1,6 @@
+ultralytics
+pandas
+opencv-python
+scipy
+easyocr
+filterpy

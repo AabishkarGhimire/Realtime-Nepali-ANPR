@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Google Maps API Example</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSb_KNzGsVGaCQ1W5uWOAM_bKCbqzTZEU&callback=initMap"
+		async defer></script>
+	<script>
+		function initMap() {
+			// Replace with the latitude and longitude of your location
+			var myLatLng = { lat: 27.6658176, lng: 85.3848053 }; //27.6658176, 85.3848053
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: myLatLng,
+				zoom: 15
+			});
+
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: 'Your Thief'
+			});
+		}
+	</script>
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Google Maps API Example</h1>
+	<div id="map"></div>
+</body>
+
+</html>

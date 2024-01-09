@@ -1,0 +1,14 @@
+import numpy as np
+
+# Example array
+arr = np.array([1, 2, 3, 4, 5])
+
+# Using np.where without [0]
+indices_tuple = np.where(arr > 2)
+print(indices_tuple)
+# Output: (array([2, 3, 4]),)
+
+# Using np.where with [0]
+indices_array = np.where(arr > 2)[0]
+print(indices_array)
+# Output: [2 3 4]
